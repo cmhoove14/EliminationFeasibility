@@ -1,7 +1,7 @@
 # Estimating the elimination feasibility in the ‘end game’ of control efforts for parasites subjected to regular mass drug administration: a schistosomiasis case study  
 
 ## `Outputs_Refs` folder  
-Contains outputs of simulations and parameter sets used in calls in plotting scripts used to produce manuscript figures  
+Contains outputs of simulations and parameter sets used in plotting scripts to produce manuscript figures. Contains all `.Rdata` files that are ignored in GitHub due to their size, but available by request by contacting @cmhoove14 or choover@berkeley.edu or by running the scripts in the order below and storing the necessary outputs  
 
 ## `Savio` folder  
 Contains scripts with minor modifications that allow them to be run on savio, the Berkeley supercomputing cluster
