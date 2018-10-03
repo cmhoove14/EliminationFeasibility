@@ -85,7 +85,7 @@ plot_sim_snails <- function(output.df){
 }
 
 #Load simulation array containing 100 transmission parameter sets, k=0.08, single round of MDA annually #####
-load("Elimination_Feasibility/Organize/Models/Outputs_Refs/k008_mda_fullarray_profileFit.Rdata")
+load("Outputs_Refs/k008_mda_fullarray_profileFit.Rdata")
 
 #In full simulation array:
   #1st ([here, , , ]) dimension is time where each row represents a day
@@ -99,36 +99,36 @@ load("Elimination_Feasibility/Organize/Models/Outputs_Refs/k008_mda_fullarray_pr
 
 #load all other objects
 #Mean w matrices    
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/mean_w_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/mean_w_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/mean_w_mda_Pdd_noAddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/mean_w_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/mean_w_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/mean_w_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/mean_w_mda_Pdd_noAddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/mean_w_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
 
 # Pre and most MDA W estimates
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/w_pre_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/w_post_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/w_pre_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/w_post_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
   
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/w_pre_mda_Pdd_noAddNDD_k008_profileFit.Rdata") 
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/w_pos_mda_Pdd_noAddNDD_k008_profileFit.Rdata") 
+  load("Outputs_refs/w_pre_mda_Pdd_noAddNDD_k008_profileFit.Rdata") 
+  load("Outputs_refs/w_pos_mda_Pdd_noAddNDD_k008_profileFit.Rdata") 
 
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/w_pre_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/w_pos_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/w_pre_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/w_pos_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
        
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/w_pre_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/w_pos_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/w_pre_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/w_pos_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
   
 # Pre and most MDA Prevalence estimates
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/prev_pre_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/prev_post_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/prev_pre_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/prev_post_mda_noPdd_noAddNDD_k008_profileFit.Rdata")  
   
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/prev_pre_mda_Pdd_noAddNDD_k008_profileFit.Rdata") 
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/prev_pos_mda_Pdd_noAddNDD_k008_profileFit.Rdata") 
+  load("Outputs_refs/prev_pre_mda_Pdd_noAddNDD_k008_profileFit.Rdata") 
+  load("Outputs_refs/prev_pos_mda_Pdd_noAddNDD_k008_profileFit.Rdata") 
 
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/prev_pre_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/prev_pos_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/prev_pre_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/prev_pos_mda_noPdd_AddNDD_k008_profileFit.Rdata")  
        
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/prev_pre_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
-  load("Elimination_Feasibility/Organize/Models/Outputs_Refs/prev_pos_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/prev_pre_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
+  load("Outputs_refs/prev_pos_mda_Pdd_AddNDD_k008_profileFit.Rdata")  
 
   covrg = 0.8
   k.fit = 0.08
@@ -346,17 +346,9 @@ eps.ggp <- eps.gg %>%
 
 
 #combine plots with multiplot
-windows(width = 14, height = 9)
+#windows(width = 14, height = 9)
   multiplot(w.ggp, bbr.ggp, eps.ggp, layout = matrix(c(1,1,2,3), nrow = 2, byrow = T))
-graphics.off()  
-  
-#Save as tiff
-tiff("Elimination_Feasibility/plots/PLoS_Figs_PostReview/Fig3.tiff", height = 14, width = 19.05, units = 'cm', 
-     compression = "lzw", res = 300) 
-  multiplot(w.ggp, bbr.ggp, eps.ggp, layout = matrix(c(1,1,2,3), nrow = 2, byrow = T))
-  
-dev.off()
-  
+
 #Prevalence based manuscript version plots #######
 #Prevalence trajectories 
 nopdd_addndd_prev <- as.data.frame(det.runs.k008.mda1[ , , 1, 2])
@@ -450,13 +442,5 @@ eps_prev.ggp <- eps_prev.gg %>%
 
 
 #combine plots with multiplot
-windows(width = 14, height = 9)
+#windows(width = 14, height = 9)
   multiplot(prev.ggp, bbr_prev.ggp, eps_prev.ggp, layout = matrix(c(1,1,2,3), nrow = 2, byrow = T))
-graphics.off()  
-  
-#Save as tiff
-tiff("Elimination_Feasibility/plots/PLoS_Figs_PostReview/Fig3_prev.tiff", height = 14, width = 19.05, units = 'cm', 
-     compression = "lzw", res = 300) 
-  multiplot(prev.ggp, bbr_prev.ggp, eps_prev.ggp, layout = matrix(c(1,1,2,3), nrow = 2, byrow = T))
-  
-dev.off()

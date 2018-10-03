@@ -6,7 +6,7 @@ require(tidyverse)
 require(rootSolve)
 require(coda)
 
-source("Elimination_Feasibility/Organize/Models/schisto_mods_pdd_nopdd.R")
+source("schisto_mods_pdd_nopdd.R")
 
 #Some useful functions #######
 phi_Wk <- function(W, k) {
@@ -221,7 +221,7 @@ op_min <- optim(par=c(lamda1s[2], lamda2s[2]),
   params["lamda2"]<-bestLamda2
   params["lamda"]<-( (375/594) * bestLamda1) +( (219/594) * bestLamda2) 
   
-save(params, file = "Elimination_Feasibility/Organize/Models/Outputs_Refs/best_fit_params.Rdata")  
+save(params, file = "Outputs_Refs/best_fit_params.Rdata")  
 
 #Fit using optim function with a variety of starting conditions ####################
 opter <- function(start_trip){
@@ -303,4 +303,4 @@ fin_pars95ci <- fin_pars %>%
   filter(negLL <= boundary) %>% 
   arrange(lamda_twa)
 
-save(fin_pars95ci, file = "Elimination_Feasibility/Organize/Models/Outputs_Refs/model_fit_profile_likelihood_parameters.Rdata")
+save(fin_pars95ci, file = "Outputs_Refs/model_fit_profile_likelihood_parameters.Rdata")

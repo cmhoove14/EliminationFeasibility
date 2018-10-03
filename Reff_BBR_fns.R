@@ -1,7 +1,5 @@
 ##### BASIC Function lib for Reff #####
 
-source("Elimination_Feasibility/Organize/Models/schisto_mods_pdd_nopdd.R")
-
 getReff<-function(parameters, W, k){ #no prawns, no psi=0, Set mu_P<-1
   f_N<-parameters["f_N"]
   C<-parameters["C"]
